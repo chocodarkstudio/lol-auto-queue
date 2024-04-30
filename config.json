@@ -1,0 +1,11 @@
+{
+"config_version": "0.1",
+
+"league_of_legends_path": "\"D:/Riot Games/Riot Client/RiotClientServices.exe\" --launch-product=league_of_legends --launch-patchline=live",
+"porofessor_path": "\"D:/Riot Games/Overwolf/OverwolfLauncher.exe\" -launchapp pibhbkkgefgheeglaeemkkfjlhidhcedalapdggh -from-desktop",
+
+
+"champs_to_play": ["lee", "kayn"],
+"champs_to_block": ["vieg", "kindred"]
+
+}
