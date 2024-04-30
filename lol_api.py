@@ -40,7 +40,7 @@ class LolApi:
         champs = None
         try:
             response = requests.get(
-                "https://la2.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=RGAPI-97424029-1583-40c7-a708-dcc686fb5845")
+                "https://la2.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=${{ secrets.RIOT_API_KEY }}")
             champs = json.loads(response.text)["freeChampionIds"]
         except Exception as e:
             print(e)
