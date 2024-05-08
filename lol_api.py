@@ -1,7 +1,13 @@
 import json
 import requests
+import os
 
+from dotenv import load_dotenv
+load_dotenv()  # take environment variables from .env.
 
+RIOT_API_KEY = os.environ.get("RIOT_API_KEY")
+
+print(RIOT_API_KEY)
 # usar self.all_champs si no es nulo, y si lo es obtener la info y setearlo
 # lo mismo con free champs
 class LolApi:
@@ -40,8 +46,10 @@ class LolApi:
         champs = None
         try:
             response = requests.get(
-                "https://la2.api.riotgames.com/lol/platform/v3/champion-rotations?api_key=${{ secrets.RIOT_API_KEY }}")
+                f"https://la2.api.riotgames.com/lol/platform/v3/champion-rotations?api_key={RIOT_API_KEY}")
             champs = json.loads(response.text)["freeChampionIds"]
         except Exception as e:
             print(e)
         return champs
+
+LolApi().get_free_champions()

@@ -1,0 +1,6 @@
+infi==0.0.1
+infi.systray==0.1.12
+PyAutoGUI==0.9.52
+PyGetWindow==0.0.9
+Requests==2.31.0
+python-dotenv==1.0.1

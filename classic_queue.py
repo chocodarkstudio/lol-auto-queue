@@ -163,7 +163,6 @@ class LockChampState(State):
     
     def on_enter(self, context: ClassicQueueMachine):
         super().on_enter(context)
-        print("Lock champ")
 
         self.champLocked = False
         self.champIndex = 0
@@ -187,6 +186,8 @@ class LockChampState(State):
         # cannot click on search champ button
         if not clicked:
             return
+
+        print(f"Lock champ: {champName}")
 
         # write champ name
         WindowsHelper.press("backspace", presses=20)
