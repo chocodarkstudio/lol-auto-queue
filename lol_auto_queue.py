@@ -6,7 +6,6 @@ import winsound
 from windows_helper import *
 from tray_icon import *
 from spelling_corrector import *
-from lol_api import *
 from classic_queue import *
 from settings import *
 

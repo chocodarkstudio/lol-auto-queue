@@ -52,4 +52,4 @@ class LolApi:
             print(e)
         return champs
 
-LolApi().get_free_champions()
+#LolApi().get_free_champions()

@@ -12,7 +12,7 @@ class Config:
     @staticmethod
     def load(path="config.json"):
         global DATA
-        print("loading data")
+        #print("loading data")
 
         file = open(path, "r")
         DATA = json.loads(file.read())
